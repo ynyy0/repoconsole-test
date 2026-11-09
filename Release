@@ -1,0 +1,4 @@
+Origin: TestRepo
+Label: TestRepo
+Architecture: iphoneos-arm64
+Components: main
