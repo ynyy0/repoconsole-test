@@ -1,9 +1,13 @@
 {
   "categories" : [
-    "分类A",
-    "分类B"
+    "工具"
   ],
   "plugins" : {
-
+    "com.test.demo" : {
+      "cats" : [
+        "分类A-改"
+      ],
+      "section" : "分类A-改"
+    }
   }
 }
