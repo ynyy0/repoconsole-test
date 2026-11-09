@@ -1,0 +1,9 @@
+Package: com.test.demo
+Name: 测试插件 Demo
+Version: 1.0.0
+Section: 工具
+Architecture: iphoneos-arm64
+Filename: debs/test.deb
+Size: 1024
+Description: 这是一个用于演示与测试的插件
+
