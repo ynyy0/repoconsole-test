@@ -1,13 +1,9 @@
 {
   "categories" : [
-
+    "分类A",
+    "分类B"
   ],
   "plugins" : {
-    "com.test.demo" : {
-      "cats" : [
-        "新分类"
-      ],
-      "section" : "新分类"
-    }
+
   }
 }
