@@ -4,7 +4,10 @@
   ],
   "plugins" : {
     "com.test.demo" : {
-      "icon" : "https:\/\/ynyy0.github.io\/repoconsole-test\/CydiaIcon.png?v=80cf8ac6"
+      "cats" : [
+        "新分类"
+      ],
+      "section" : "新分类"
     }
   }
 }
