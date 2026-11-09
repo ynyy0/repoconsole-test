@@ -1,4 +1,10 @@
 {
-  "plugins": {},
-  "categories": []
+  "categories" : [
+
+  ],
+  "plugins" : {
+    "com.test.demo" : {
+      "name" : "改名后的名字"
+    }
+  }
 }
