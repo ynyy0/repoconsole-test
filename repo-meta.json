@@ -4,9 +4,13 @@
   ],
   "plugins" : {
     "com.test.demo" : {
+      "cats" : [
+        "新分类"
+      ],
       "description" : "这是新的描述文案",
       "icon" : "https:\/\/ynyy0.github.io\/repoconsole-test\/CydiaIcon.png?v=80cf8ac6",
-      "name" : "改名后的名字"
+      "name" : "改名后的名字",
+      "section" : "新分类"
     }
   }
 }
