@@ -4,6 +4,7 @@
   ],
   "plugins" : {
     "com.test.demo" : {
+      "description" : "这是新的描述文案",
       "name" : "改名后的名字"
     }
   }
