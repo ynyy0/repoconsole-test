@@ -5,7 +5,6 @@
   "plugins" : {
     "com.test.demo" : {
       "description" : "这是新的描述文案",
-      "icon" : "https:\/\/ynyy0.github.io\/repoconsole-test\/CydiaIcon.png?v=80cf8ac6",
       "name" : "改名后的名字"
     }
   }
