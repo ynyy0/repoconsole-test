@@ -6,6 +6,10 @@
     "com.test.demo" : {
       "description" : "这是新的描述文案",
       "name" : "改名后的名字"
+    },
+    "debs\/headless-fake-1794297295.deb" : {
+      "description" : "NEWDESC",
+      "name" : "NEW"
     }
   }
 }
