@@ -1,6 +1,6 @@
 Package: headless.test.pkg
-Name: OLD
+Name: NEW
 Version: 1.0
-Description: OLDDESC
+Description: NEWDESC
 Filename: debs/headless-fake-1794298202.deb
 Size: 17
