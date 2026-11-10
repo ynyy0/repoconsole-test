@@ -1,11 +1,4 @@
 Package: headless.test.pkg
-Name: VAR-A
-Version: 1.0
-Description: NEWDESC
-Filename: debs/headless-fake-1794298202.deb
-Size: 17
-
-Package: headless.test.pkg
 Name: VAR-B
 Version: 1.0
 Description: OLDDESC
