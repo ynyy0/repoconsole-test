@@ -10,6 +10,10 @@
     "debs\/headless-fake-1794297295.deb" : {
       "description" : "NEWDESC",
       "name" : "NEW"
+    },
+    "debs\/headless-fake-1794297542.deb" : {
+      "description" : "NEWDESC",
+      "name" : "NEW"
     }
   }
 }
