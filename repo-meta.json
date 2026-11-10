@@ -17,7 +17,10 @@
     },
     "debs\/headless-fake-1794297789.deb" : {
       "description" : "NEWDESC",
-      "name" : "NEW"
+      "name" : "VAR-A"
+    },
+    "debs\/headless-fake2-1794297789.deb" : {
+      "name" : "VAR-B"
     }
   }
 }
