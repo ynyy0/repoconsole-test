@@ -9,11 +9,11 @@ MD5sum: 362ac560bfd2dc013b3de00228207128
 SHA1: 089bfb927039bafb878b3813d46a74e3ec4e3347
 SHA256: c27196a850561e87fbfe3e49743970ca674bc5433132fd267e9f9c2f7eb7fbd4
 Section: 实用工具
-Homepage: https://ynyy0.github.io/repoconsole-test/
+Homepage: https://ynyy.xbcxbc.cn/repoconsole-test/
 Description: 按应用扫描缓存与临时文件，可设置定时清理。
 Author: 星河工作室
 Name: 缓存清理助手
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.cleaner.png?v=981db333
+Icon: https://ynyy.xbcxbc.cn/repoconsole-test/icons/com.galaxy.cleaner.png?v=981db333
 
 Package: com.galaxy.darkmode
 Version: 1.0.1
@@ -25,11 +25,11 @@ Size: 854
 MD5sum: 6a7121185aac39a4f24d8735f97023de
 SHA1: 4e75347b7f7023efc2e958aaf5781b6516346035
 SHA256: 46403283b8e7d88a9bf866bf9b50c03f433235af43baa186648b5b51bc190fee
-Homepage: https://ynyy0.github.io/repoconsole-test/
+Homepage: https://ynyy.xbcxbc.cn/repoconsole-test/
 Description: 为未适配深色的界面补充暗色渲染规则。
 Author: 星河工作室
 Name: 全局深色增强
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.darkmode.png?v=073012c0
+Icon: https://ynyy.xbcxbc.cn/repoconsole-test/icons/com.galaxy.darkmode.png?v=073012c0
 Section: 测试
 
 Package: com.galaxy.iconpack
@@ -42,11 +42,11 @@ Size: 860
 MD5sum: f3dbd9b6a09c89251871da0f9501b64d
 SHA1: 493f0e10a3f39e52ec40af51c40a2282fad6ff28
 SHA256: cdad3c6b9e442a69305d369b008cc6e52aebbf6bcf6a0c00ae78361d68a74bec
-Homepage: https://ynyy0.github.io/repoconsole-test/
+Homepage: https://ynyy.xbcxbc.cn/repoconsole-test/
 Description: 一套低饱和度的圆角图标，涵盖常见系统应用。
 Author: 星河工作室
 Name: 图标包 · 极简
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.iconpack.png?v=aecf0bc1
+Icon: https://ynyy.xbcxbc.cn/repoconsole-test/icons/com.galaxy.iconpack.png?v=aecf0bc1
 Section: 测试
 
 Package: com.galaxy.keyboard
@@ -59,11 +59,11 @@ Size: 844
 MD5sum: c78fcf6e3cfcf113d9bf0580b19a08c5
 SHA1: df998e8ae95973459817eb579fbfe52f4a392073
 SHA256: 8b3f9ecd24cec2cafa793151e81b34e87a5e51a48448c458d74271bf9d5f124e
-Homepage: https://ynyy0.github.io/repoconsole-test/
+Homepage: https://ynyy.xbcxbc.cn/repoconsole-test/
 Description: 为按键提供可调节力度的触感反馈。
 Author: 星河工作室
 Name: 键盘震动反馈
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.keyboard.png?v=5b1500e5
+Icon: https://ynyy.xbcxbc.cn/repoconsole-test/icons/com.galaxy.keyboard.png?v=5b1500e5
 Section: 你好
 
 Package: com.galaxy.netguard
@@ -76,11 +76,11 @@ Size: 862
 MD5sum: f233581c2d4223b1a77446070fdf5592
 SHA1: fb9910b1eca24c4492f086add46a8194e48cb12b
 SHA256: 149132a7426fd52517d40b3caa94d7c386a932f514441f9e49676652f9fc3823
-Homepage: https://ynyy0.github.io/repoconsole-test/
+Homepage: https://ynyy.xbcxbc.cn/repoconsole-test/
 Description: 按域名拦截广告与跟踪请求，支持自定义规则。
 Author: 星河工作室
 Name: 网络防护
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.netguard.png?v=b88616e2
+Icon: https://ynyy.xbcxbc.cn/repoconsole-test/icons/com.galaxy.netguard.png?v=b88616e2
 Section: 分屏插件
 
 Package: com.galaxy.splitview
@@ -93,8 +93,8 @@ Size: 856
 MD5sum: 7e95e2fa483908c721f1e60731d30974
 SHA1: a00c13c65eb4bae17e3a0f6a7907857eb66a0b3a
 SHA256: b2fe2473911af81b551034b33c2970f0e6076ab448ba7b6a0aab5a47ed1d88d3
-Homepage: https://ynyy0.github.io/repoconsole-test/
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.splitview.png?v=b88616e2
+Homepage: https://ynyy.xbcxbc.cn/repoconsole-test/
+Icon: https://ynyy.xbcxbc.cn/repoconsole-test/icons/com.galaxy.splitview.png?v=b88616e2
 Name: 测试 1
 Description: 测试
 Author: 测试
@@ -110,28 +110,28 @@ Size: 848
 MD5sum: 145d25edd20f557edf56eed5a3468cc4
 SHA1: 7e686db3cc8216a1ca10640ee4df7ae470c28d79
 SHA256: dd78e5b15a8feaea77665a359846fec111a9b40066980db5364942b62e32c7f7
-Homepage: https://ynyy0.github.io/repoconsole-test/
+Homepage: https://ynyy.xbcxbc.cn/repoconsole-test/
 Description: 自定义时间格式、信号样式与电量显示方式。
 Author: 星河工作室
 Name: 状态栏自定义
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.statusbar.png?v=f75f54f9
+Icon: https://ynyy.xbcxbc.cn/repoconsole-test/icons/com.galaxy.statusbar.png?v=f75f54f9
 Section: 测试
 
 Package: com.galaxy.swipe
 Version: 2.2
-Architecture: iphoneos-arm
+Architecture: iphoneos-arm64
 Maintainer: 星河工作室 <repo@galaxy.example.com>
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.galaxy.swipe_2.2_iphoneos-arm.deb
-Size: 858
-MD5sum: 8f1f418b2f6a3b7b86ebd77568fc009f
-SHA1: 3618880a81a5421ebc682ef8a91f4ea76118ede4
-SHA256: 5c8457308c86ee44fe88f9215dd89e8c346e9658e3565ab8a4602ee9ed810a34
-Homepage: https://ynyy0.github.io/repoconsole-test/
+Filename: debs/com.galaxy.swipe_2.2_iphoneos-arm64.deb
+Size: 854
+MD5sum: 662a6f9b39261c588af72ebfe22ea658
+SHA1: 05dbe1046f67f1bbe2cf03e130cd2772f1ee191b
+SHA256: 10a4a2120c1f107f36fa6fb40f9982752126c2f5f75659a026cd2fedab828f28
+Homepage: https://ynyy.xbcxbc.cn/repoconsole-test/
 Description: 扩展屏幕边缘手势，支持返回与多任务快速切换。
 Author: 星河工作室
 Name: 侧滑手势增强
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.swipe.png?v=59f72239
+Icon: https://ynyy.xbcxbc.cn/repoconsole-test/icons/com.galaxy.swipe.png?v=59f72239
 Section: 未分类
 
 Package: com.galaxy.toolbox
@@ -145,11 +145,11 @@ MD5sum: f5cd7222f0a7054b2cae8a1d0aa20ec7
 SHA1: fc3afbe79df2ca24867a7aa3fa2249266a66f1fb
 SHA256: 43f646bef901af99be7c0369a358deecc50e156fbb4fc67bc9b2f5801fdbdafc
 Section: 实用工具
-Homepage: https://ynyy0.github.io/repoconsole-test/
+Homepage: https://ynyy.xbcxbc.cn/repoconsole-test/
 Description: 集合常用系统快捷开关与清理功能，支持控制中心集成。
 Author: 星河工作室
 Name: 星河工具箱
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.toolbox.png?v=a76af242
+Icon: https://ynyy.xbcxbc.cn/repoconsole-test/icons/com.galaxy.toolbox.png?v=a76af242
 
 Package: com.galaxy.toolbox
 Version: 1.3.0
@@ -162,11 +162,11 @@ MD5sum: 60f7a6d305eafedb3069dcff626b72a4
 SHA1: 4ac2f63b37b2d6f0894f91e3531c890f2f9abbe1
 SHA256: 25d062902fb7f2854a85e9c67bfa03ee28ae84d9646ef32bc52c14f5773f62bc
 Section: 实用工具
-Homepage: https://ynyy0.github.io/repoconsole-test/
+Homepage: https://ynyy.xbcxbc.cn/repoconsole-test/
 Description: 新增状态栏快捷入口，修复部分机型上的开关延迟。
 Author: 星河工作室
 Name: 星河工具箱
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.toolbox.png?v=a76af242
+Icon: https://ynyy.xbcxbc.cn/repoconsole-test/icons/com.galaxy.toolbox.png?v=a76af242
 
 Package: com.galaxy.tweakcore
 Version: 1.5
@@ -179,11 +179,11 @@ MD5sum: b608d85e70e394a8f3f9bd90aafae384
 SHA1: fce932186e041c5e203974882389700cda250f90
 SHA256: d4a8ae95a041138aaa474e7d7402dbf5a4e9d5ab9c7f0ba46689509f8f29f5e8
 Section: Tweaks
-Homepage: https://ynyy0.github.io/repoconsole-test/
+Homepage: https://ynyy.xbcxbc.cn/repoconsole-test/
 Description: 一组系统级行为调整选项，可按模块单独启用。
 Author: 星河工作室
 Name: 系统底层增强
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.tweakcore.png?v=b01b578a
+Icon: https://ynyy.xbcxbc.cn/repoconsole-test/icons/com.galaxy.tweakcore.png?v=b01b578a
 
 Package: com.galaxy.wxhelper
 Version: 4.0.2
@@ -195,11 +195,11 @@ Size: 844
 MD5sum: 9d08a5168d1f11934708157127df1263
 SHA1: 271d2f54dc48468594755b61b6b5bd7c3be8cefd
 SHA256: 858f430c44dd1cba06b63e4b909f74a038d476dfda3b5e8b824ed56766fadec3
-Homepage: https://ynyy0.github.io/repoconsole-test/
+Homepage: https://ynyy.xbcxbc.cn/repoconsole-test/
 Description: 消息批量处理与聊天界面增强。
 Author: 星河工作室
 Name: 微信辅助增强
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxhelper.png?v=186da334
+Icon: https://ynyy.xbcxbc.cn/repoconsole-test/icons/com.galaxy.wxhelper.png?v=186da334
 Section: 测试
 
 Package: com.galaxy.wxred
@@ -212,10 +212,9 @@ Size: 846
 MD5sum: 643c11c72902c0abefbd9b66eca940b9
 SHA1: e1620399eb2ed67b0fd357e82476ec5cd1c50ed1
 SHA256: 24cfcea5fd76619d1d15306604f20a537a7e44e5733aeaf38a00c9e36cadddcd
-Homepage: https://ynyy0.github.io/repoconsole-test/
+Homepage: https://ynyy.xbcxbc.cn/repoconsole-test/
 Description: 自定义通知提示音与角标规则。
 Author: 星河工作室
 Name: 消息提醒增强
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxred.png?v=f411c337
+Icon: https://ynyy.xbcxbc.cn/repoconsole-test/icons/com.galaxy.wxred.png?v=f411c337
 Section: 未分类
-
