@@ -1,8 +1,25 @@
 {
   "categories" : [
-
+    "Tweaks",
+    "分屏插件",
+    "实用工具",
+    "微信插件",
+    "手势键盘",
+    "测试"
   ],
   "plugins" : {
+    "com.galaxy.darkmode" : {
+      "cats" : [
+        "测试"
+      ],
+      "section" : "测试"
+    },
+    "com.galaxy.iconpack" : {
+      "cats" : [
+        "测试"
+      ],
+      "section" : "测试"
+    },
     "com.galaxy.netguard" : {
       "cats" : [
         "分屏插件"
@@ -12,17 +29,35 @@
     "com.galaxy.splitview" : {
       "author" : "测试",
       "cats" : [
-        "美化"
+        "测试"
       ],
       "description" : "测试",
       "name" : "测试 1",
-      "section" : "美化"
+      "section" : "测试"
+    },
+    "com.galaxy.statusbar" : {
+      "cats" : [
+        "测试"
+      ],
+      "section" : "测试"
     },
     "com.galaxy.wxhelper" : {
       "cats" : [
-        "美化"
+        "测试"
       ],
-      "section" : "美化"
+      "section" : "测试"
+    },
+    "debs\/com.galaxy.darkmode_1.0.1_iphoneos-arm64e.deb" : {
+      "cats" : [
+        "测试"
+      ],
+      "section" : "测试"
+    },
+    "debs\/com.galaxy.iconpack_3.0_iphoneos-arm64.deb" : {
+      "cats" : [
+        "测试"
+      ],
+      "section" : "测试"
     },
     "debs\/com.galaxy.netguard_0.9.3_iphoneos-arm64.deb" : {
       "cats" : [
@@ -33,17 +68,23 @@
     "debs\/com.galaxy.splitview_2.0_iphoneos-arm64e.deb" : {
       "author" : "测试",
       "cats" : [
-        "美化"
+        "测试"
       ],
       "description" : "测试",
       "name" : "测试 1",
-      "section" : "美化"
+      "section" : "测试"
+    },
+    "debs\/com.galaxy.statusbar_1.4_iphoneos-arm64.deb" : {
+      "cats" : [
+        "测试"
+      ],
+      "section" : "测试"
     },
     "debs\/com.galaxy.wxhelper_4.0.2_iphoneos-arm64.deb" : {
       "cats" : [
-        "美化"
+        "测试"
       ],
-      "section" : "美化"
+      "section" : "测试"
     }
   }
 }

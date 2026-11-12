@@ -25,7 +25,7 @@ Size: 854
 MD5sum: 6a7121185aac39a4f24d8735f97023de
 SHA1: 4e75347b7f7023efc2e958aaf5781b6516346035
 SHA256: 46403283b8e7d88a9bf866bf9b50c03f433235af43baa186648b5b51bc190fee
-Section: 美化
+Section: 测试
 Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 为未适配深色的界面补充暗色渲染规则。
 Author: 星河工作室
@@ -42,7 +42,7 @@ Size: 860
 MD5sum: f3dbd9b6a09c89251871da0f9501b64d
 SHA1: 493f0e10a3f39e52ec40af51c40a2282fad6ff28
 SHA256: cdad3c6b9e442a69305d369b008cc6e52aebbf6bcf6a0c00ae78361d68a74bec
-Section: 美化
+Section: 测试
 Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 一套低饱和度的圆角图标，涵盖常见系统应用。
 Author: 星河工作室
@@ -80,7 +80,7 @@ Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 按域名拦截广告与跟踪请求，支持自定义规则。
 Author: 星河工作室
 Name: 网络防护
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.netguard.png?v=b88616e2
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.netguard.png?v=78b3ba61
 Section: 分屏插件
 
 Package: com.galaxy.splitview
@@ -98,7 +98,7 @@ Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.splitview.png?v=
 Name: 测试 1
 Description: 测试
 Author: 测试
-Section: 美化
+Section: 测试
 
 Package: com.galaxy.statusbar
 Version: 1.4
@@ -110,7 +110,7 @@ Size: 848
 MD5sum: 145d25edd20f557edf56eed5a3468cc4
 SHA1: 7e686db3cc8216a1ca10640ee4df7ae470c28d79
 SHA256: dd78e5b15a8feaea77665a359846fec111a9b40066980db5364942b62e32c7f7
-Section: 美化
+Section: 测试
 Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 自定义时间格式、信号样式与电量显示方式。
 Author: 星河工作室
@@ -200,7 +200,7 @@ Description: 消息批量处理与聊天界面增强。
 Author: 星河工作室
 Name: 微信辅助增强
 Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxhelper.png?v=186da334
-Section: 美化
+Section: 测试
 
 Package: com.galaxy.wxred
 Version: 1.0
@@ -218,4 +218,3 @@ Description: 自定义通知提示音与角标规则。
 Author: 星河工作室
 Name: 消息提醒增强
 Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxred.png?v=f411c337
-
