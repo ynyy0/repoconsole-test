@@ -10,6 +10,7 @@
       "section" : "分屏插件"
     },
     "com.galaxy.splitview" : {
+      "author" : "测试",
       "cats" : [
         "美化"
       ],
@@ -29,6 +30,7 @@
       "section" : "分屏插件"
     },
     "debs\/com.galaxy.splitview_2.0_iphoneos-arm64e.deb" : {
+      "author" : "测试",
       "cats" : [
         "美化"
       ],
