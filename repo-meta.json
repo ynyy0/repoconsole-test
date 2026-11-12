@@ -1,0 +1,19 @@
+{
+  "categories" : [
+
+  ],
+  "plugins" : {
+    "com.galaxy.netguard" : {
+      "cats" : [
+        "分屏插件"
+      ],
+      "section" : "分屏插件"
+    },
+    "debs\/com.galaxy.netguard_0.9.3_iphoneos-arm64.deb" : {
+      "cats" : [
+        "分屏插件"
+      ],
+      "section" : "分屏插件"
+    }
+  }
+}

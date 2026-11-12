@@ -76,7 +76,7 @@ Size: 862
 MD5sum: f233581c2d4223b1a77446070fdf5592
 SHA1: fb9910b1eca24c4492f086add46a8194e48cb12b
 SHA256: 149132a7426fd52517d40b3caa94d7c386a932f514441f9e49676652f9fc3823
-Section: Tweaks
+Section: 分屏插件
 Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 按域名拦截广告与跟踪请求，支持自定义规则。
 Author: 星河工作室
