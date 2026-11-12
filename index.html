@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>测试源</title>
+<meta name="description" content="测试源 — iOS 越狱源">
+<style>
+:root{color-scheme:light dark;--bg:#f5f6fb;--card:rgba(255,255,255,.74);--fg:#12141a;--sub:#6b7280;--line:rgba(0,0,0,.08);--accent:#5b7cfa}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0d12;--card:rgba(255,255,255,.06);--fg:#f2f4f8;--sub:#98a1b2;--line:rgba(255,255,255,.1)}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;color:var(--fg);
+font:16px/1.6 -apple-system,system-ui,"PingFang SC",sans-serif;
+background:radial-gradient(120% 80% at 20% 0%,#c9d6ff55,transparent 60%),radial-gradient(120% 80% at 90% 100%,#ffd6e755,transparent 60%),var(--bg)}
+.card{width:100%;max-width:520px;min-width:0;padding:28px;border:1px solid var(--line);border-radius:24px;
+background:var(--card);backdrop-filter:blur(20px);box-shadow:0 20px 60px rgba(0,0,0,.12)}
+h1{margin:0 0 4px;font-size:26px;letter-spacing:.5px}
+.sub{margin:0 0 22px;color:var(--sub);font-size:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 18px;border-radius:14px;
+border:1px solid var(--line);background:transparent;color:var(--fg);font-size:15px;font-weight:600;
+text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:transparent;color:#fff}
+.add{display:block;width:100%;margin-bottom:12px}
+.url{display:flex;gap:8px;align-items:center;padding:12px 14px;border:1px solid var(--line);
+border-radius:14px;background:rgba(127,127,127,.08)}
+.url code{flex:1;min-width:0;font-family:ui-monospace,Menlo,monospace;font-size:13px;word-break:break-all}
+.tip{min-height:20px;margin:10px 0 0;font-size:13px;color:var(--sub)}
+</style>
+</head>
+<body>
+<main class="card">
+<h1>测试源</h1>
+<p class="sub">iOS 越狱源</p>
+<a class="btn primary add" id="add" href="#">添加到 Sileo</a>
+<div class="url"><code id="u"></code><button class="btn" id="copy" type="button">复制</button></div>
+<p class="tip" id="tip"></p>
+</main>
+<script>
+var base = location.origin + location.pathname.replace(/index\.html$/, '');
+if (base.slice(-1) !== '/') base += '/';
+document.getElementById('u').textContent = base;
+document.getElementById('add').href = 'sileo://source/' + base;
+document.getElementById('copy').onclick = function () {
+  navigator.clipboard.writeText(base).then(function () { tip('已复制源地址'); },
+                                            function () { tip('请长按地址手动复制'); });
+};
+function tip(t) {
+  var e = document.getElementById('tip');
+  e.textContent = t;
+  clearTimeout(tip.n);
+  tip.n = setTimeout(function () { e.textContent = ''; }, 2000);
+}
+</script>
+</body>
+</html>

@@ -1,4 +1,8 @@
-Origin: TestRepo
-Label: TestRepo
-Architecture: iphoneos-arm64
+Origin: 测试源
+Label: 测试源
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
+Description: RepoConsole App 测试专用源 · 全部为测试包，可安全删除

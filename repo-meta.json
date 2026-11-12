@@ -1,40 +1,29 @@
 {
-  "categories" : [
-
+  "categories": [
+    "工具",
+    "Tweaks",
+    "公益插件",
+    "分屏插件",
+    "微信插件",
+    "手势键盘",
+    "杂七杂八",
+    "zqbb Tweaks"
   ],
-  "plugins" : {
-    "com.test.demo" : {
-      "description" : "这是新的描述文案",
-      "name" : "改名后的名字"
+  "plugins": {
+    "com.test.override": {
+      "section": "工具",
+      "cats": [
+        "工具"
+      ],
+      "name": "已被覆盖的名字",
+      "author": "小菜",
+      "description": "这条描述来自 repo-meta 包名键覆盖"
     },
-    "debs\/headless-fake-1794297295.deb" : {
-      "description" : "NEWDESC",
-      "name" : "NEW"
-    },
-    "debs\/headless-fake-1794297542.deb" : {
-      "description" : "NEWDESC",
-      "name" : "NEW"
-    },
-    "debs\/headless-fake-1794297789.deb" : {
-      "description" : "NEWDESC",
-      "name" : "VAR-A"
-    },
-    "debs\/headless-fake-1794298202.deb" : {
-      "description" : "NEWDESC",
-      "name" : "VAR-A"
-    },
-    "debs\/headless-fake-1794298393.deb" : {
-      "description" : "NEWDESC",
-      "name" : "VAR-A"
-    },
-    "debs\/headless-fake2-1794297789.deb" : {
-      "name" : "VAR-B"
-    },
-    "debs\/headless-fake2-1794298202.deb" : {
-      "name" : "VAR-B"
-    },
-    "debs\/headless-fake2-1794298393.deb" : {
-      "name" : "VAR-B"
+    "debs/com.test.pathonly_1.0_iphoneos-arm64.deb": {
+      "section": "公益插件",
+      "cats": [
+        "公益插件"
+      ]
     }
   }
 }
