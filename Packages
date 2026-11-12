@@ -13,7 +13,7 @@ Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 按应用扫描缓存与临时文件，可设置定时清理。
 Author: 星河工作室
 Name: 缓存清理助手
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.cleaner.png
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.cleaner.png?v=981db333
 
 Package: com.galaxy.darkmode
 Version: 1.0.1
@@ -30,7 +30,7 @@ Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 为未适配深色的界面补充暗色渲染规则。
 Author: 星河工作室
 Name: 全局深色增强
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.darkmode.png
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.darkmode.png?v=073012c0
 
 Package: com.galaxy.iconpack
 Version: 3.0
@@ -47,7 +47,7 @@ Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 一套低饱和度的圆角图标，涵盖常见系统应用。
 Author: 星河工作室
 Name: 图标包 · 极简
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.iconpack.png
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.iconpack.png?v=aecf0bc1
 
 Package: com.galaxy.keyboard
 Version: 1.1
@@ -64,7 +64,7 @@ Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 为按键提供可调节力度的触感反馈。
 Author: 星河工作室
 Name: 键盘震动反馈
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.keyboard.png
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.keyboard.png?v=5b1500e5
 
 Package: com.galaxy.netguard
 Version: 0.9.3
@@ -76,12 +76,12 @@ Size: 862
 MD5sum: f233581c2d4223b1a77446070fdf5592
 SHA1: fb9910b1eca24c4492f086add46a8194e48cb12b
 SHA256: 149132a7426fd52517d40b3caa94d7c386a932f514441f9e49676652f9fc3823
-Section: 分屏插件
 Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 按域名拦截广告与跟踪请求，支持自定义规则。
 Author: 星河工作室
 Name: 网络防护
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.netguard.png
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.netguard.png?v=78b3ba61
+Section: 分屏插件
 
 Package: com.galaxy.splitview
 Version: 2.0
@@ -98,7 +98,7 @@ Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 在支持的机型上启用并排显示与悬浮窗口。
 Author: 星河工作室
 Name: 分屏多任务
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.splitview.png
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.splitview.png?v=bb1f2e7a
 
 Package: com.galaxy.statusbar
 Version: 1.4
@@ -115,7 +115,7 @@ Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 自定义时间格式、信号样式与电量显示方式。
 Author: 星河工作室
 Name: 状态栏自定义
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.statusbar.png
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.statusbar.png?v=f75f54f9
 
 Package: com.galaxy.swipe
 Version: 2.2
@@ -132,7 +132,7 @@ Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 扩展屏幕边缘手势，支持返回与多任务快速切换。
 Author: 星河工作室
 Name: 侧滑手势增强
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.swipe.png
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.swipe.png?v=59f72239
 
 Package: com.galaxy.toolbox
 Version: 1.2.0
@@ -149,7 +149,7 @@ Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 集合常用系统快捷开关与清理功能，支持控制中心集成。
 Author: 星河工作室
 Name: 星河工具箱
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.toolbox.png
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.toolbox.png?v=a76af242
 
 Package: com.galaxy.toolbox
 Version: 1.3.0
@@ -166,7 +166,7 @@ Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 新增状态栏快捷入口，修复部分机型上的开关延迟。
 Author: 星河工作室
 Name: 星河工具箱
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.toolbox.png
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.toolbox.png?v=a76af242
 
 Package: com.galaxy.tweakcore
 Version: 1.5
@@ -183,7 +183,7 @@ Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 一组系统级行为调整选项，可按模块单独启用。
 Author: 星河工作室
 Name: 系统底层增强
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.tweakcore.png
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.tweakcore.png?v=b01b578a
 
 Package: com.galaxy.wxhelper
 Version: 4.0.2
@@ -195,12 +195,12 @@ Size: 844
 MD5sum: 9d08a5168d1f11934708157127df1263
 SHA1: 271d2f54dc48468594755b61b6b5bd7c3be8cefd
 SHA256: 858f430c44dd1cba06b63e4b909f74a038d476dfda3b5e8b824ed56766fadec3
-Section: 美化
 Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 消息批量处理与聊天界面增强。
 Author: 星河工作室
 Name: 微信辅助增强
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxhelper.png
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxhelper.png?v=186da334
+Section: 美化
 
 Package: com.galaxy.wxred
 Version: 1.0
@@ -217,4 +217,5 @@ Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 自定义通知提示音与角标规则。
 Author: 星河工作室
 Name: 消息提醒增强
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxred.png
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxred.png?v=f411c337
+
