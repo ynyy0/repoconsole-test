@@ -13,7 +13,7 @@
       "cats" : [
         "美化"
       ],
-      "name" : "测试",
+      "name" : "测试 1",
       "section" : "美化"
     },
     "com.galaxy.wxhelper" : {
@@ -32,7 +32,7 @@
       "cats" : [
         "美化"
       ],
-      "name" : "测试",
+      "name" : "测试 1",
       "section" : "美化"
     },
     "debs\/com.galaxy.wxhelper_4.0.2_iphoneos-arm64.deb" : {
