@@ -2,54 +2,105 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>测试源</title>
-<meta name="description" content="测试源 — iOS 越狱源">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>星河软件源</title>
+<meta name="description" content="星河软件源 — 面向 iOS 越狱设备的插件仓库">
 <style>
-:root{color-scheme:light dark;--bg:#f5f6fb;--card:rgba(255,255,255,.74);--fg:#12141a;--sub:#6b7280;--line:rgba(0,0,0,.08);--accent:#5b7cfa}
-@media (prefers-color-scheme:dark){:root{--bg:#0b0d12;--card:rgba(255,255,255,.06);--fg:#f2f4f8;--sub:#98a1b2;--line:rgba(255,255,255,.1)}}
+:root{
+  --bg:#f3f4fb; --card:#ffffff; --fg:#1b1d2c; --sub:#6b6f88;
+  --line:rgba(70,74,120,.14); --accent:#5a5fd8; --chip:rgba(90,95,216,.09);
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#11131f; --card:#1c1f30; --fg:#f0f1fa; --sub:#9a9fbd;
+        --line:rgba(190,196,255,.14); --accent:#8b8ffb; --chip:rgba(139,143,251,.12);}
+}
 *{box-sizing:border-box}
-body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;color:var(--fg);
-font:16px/1.6 -apple-system,system-ui,"PingFang SC",sans-serif;
-background:radial-gradient(120% 80% at 20% 0%,#c9d6ff55,transparent 60%),radial-gradient(120% 80% at 90% 100%,#ffd6e755,transparent 60%),var(--bg)}
-.card{width:100%;max-width:520px;min-width:0;padding:28px;border:1px solid var(--line);border-radius:24px;
-background:var(--card);backdrop-filter:blur(20px);box-shadow:0 20px 60px rgba(0,0,0,.12)}
-h1{margin:0 0 4px;font-size:26px;letter-spacing:.5px}
-.sub{margin:0 0 22px;color:var(--sub);font-size:14px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 18px;border-radius:14px;
-border:1px solid var(--line);background:transparent;color:var(--fg);font-size:15px;font-weight:600;
-text-decoration:none;cursor:pointer}
-.btn.primary{background:var(--accent);border-color:transparent;color:#fff}
-.add{display:block;width:100%;margin-bottom:12px}
-.url{display:flex;gap:8px;align-items:center;padding:12px 14px;border:1px solid var(--line);
-border-radius:14px;background:rgba(127,127,127,.08)}
-.url code{flex:1;min-width:0;font-family:ui-monospace,Menlo,monospace;font-size:13px;word-break:break-all}
-.tip{min-height:20px;margin:10px 0 0;font-size:13px;color:var(--sub)}
+html,body{margin:0;padding:0}
+body{min-height:100vh;background:
+  radial-gradient(120% 70% at 15% 0%,rgba(120,108,240,.16),transparent 60%),
+  radial-gradient(110% 70% at 90% 100%,rgba(90,160,240,.14),transparent 60%),
+  var(--bg);
+  color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  display:flex;align-items:center;justify-content:center;padding:24px}
+.wrap{width:100%;max-width:520px}
+.card{width:100%;max-width:520px;padding:28px 26px 30px;border:1px solid var(--line);
+  border-radius:24px;background:var(--card);box-shadow:0 20px 60px rgba(30,32,70,.12)}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.brand img{width:58px;height:58px;border-radius:14px;flex:none}
+h1{margin:0;font-size:25px;letter-spacing:.5px}
+.tagline{margin:2px 0 0;color:var(--sub);font-size:13.5px}
+.stats{display:flex;gap:10px;margin:0 0 20px}
+.stat{flex:1;text-align:center;padding:10px 6px;border-radius:14px;background:var(--chip)}
+.stat b{display:block;font-size:20px;line-height:1.2}
+.stat span{font-size:12px;color:var(--sub)}
+.label{display:block;margin:0 0 8px;font-size:12.5px;color:var(--sub);letter-spacing:.3px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+  padding:13px 18px;border-radius:14px;border:1px solid transparent;background:var(--accent);
+  color:#fff;font-size:15px;font-weight:600;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;border-color:var(--line);color:var(--fg);margin-top:10px}
+.url{display:flex;align-items:center;gap:8px;padding:11px 13px;border:1px solid var(--line);
+  border-radius:14px;background:rgba(127,127,127,.06);margin-bottom:16px}
+.url code{flex:1;min-width:0;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;
+  color:var(--sub);overflow-wrap:anywhere}
+.copy{flex:none;padding:5px 11px;border:1px solid var(--line);border-radius:9px;
+  background:transparent;color:var(--fg);font-size:12.5px;cursor:pointer}
+.sections{margin:22px 0 0;padding-top:18px;border-top:1px solid var(--line)}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.chip{padding:5px 11px;border-radius:999px;background:var(--chip);font-size:12.5px;color:var(--sub)}
+footer{margin:18px 0 0;text-align:center;color:var(--sub);font-size:12px}
 </style>
 </head>
 <body>
-<main class="card">
-<h1>测试源</h1>
-<p class="sub">iOS 越狱源</p>
-<a class="btn primary add" id="add" href="#">添加到 Sileo</a>
-<div class="url"><code id="u"></code><button class="btn" id="copy" type="button">复制</button></div>
-<p class="tip" id="tip"></p>
-</main>
+<div class="wrap">
+  <div class="card">
+    <div class="brand">
+      <img src="CydiaIcon.png" alt="源图标">
+      <div>
+        <h1>星河软件源</h1>
+        <p class="tagline">面向 iOS 越狱设备的插件仓库</p>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>13</b><span>插件</span></div>
+      <div class="stat"><b>6</b><span>分类</span></div>
+      <div class="stat"><b>3</b><span>架构</span></div>
+    </div>
+
+    <span class="label">源地址</span>
+    <div class="url">
+      <code id="src">https://ynyy0.github.io/repoconsole-test/</code>
+      <button class="copy" id="copy">复制</button>
+    </div>
+
+    <a class="btn" href="sileo://source/https://ynyy0.github.io/repoconsole-test/">添加到 Sileo</a>
+    <a class="btn ghost" href="Packages">查看插件索引</a>
+
+    <div class="sections">
+      <span class="label">分类</span>
+      <div class="chips">
+        <span class="chip">实用工具</span><span class="chip">美化</span>
+        <span class="chip">手势键盘</span><span class="chip">微信插件</span>
+        <span class="chip">分屏插件</span><span class="chip">Tweaks</span>
+      </div>
+    </div>
+
+    <footer>支持 rootful / rootless / roothide · arm / arm64 / arm64e</footer>
+  </div>
+</div>
 <script>
-var base = location.origin + location.pathname.replace(/index\.html$/, '');
-if (base.slice(-1) !== '/') base += '/';
-document.getElementById('u').textContent = base;
-document.getElementById('add').href = 'sileo://source/' + base;
-document.getElementById('copy').onclick = function () {
-  navigator.clipboard.writeText(base).then(function () { tip('已复制源地址'); },
-                                            function () { tip('请长按地址手动复制'); });
-};
-function tip(t) {
-  var e = document.getElementById('tip');
-  e.textContent = t;
-  clearTimeout(tip.n);
-  tip.n = setTimeout(function () { e.textContent = ''; }, 2000);
-}
+document.getElementById('copy').addEventListener('click', function () {
+  var text = document.getElementById('src').textContent.trim();
+  var btn = this;
+  function done() { btn.textContent = '已复制'; setTimeout(function () { btn.textContent = '复制'; }, 1600); }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(done);
+  } else {
+    var ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta); done();
+  }
+});
 </script>
 </body>
 </html>

@@ -1,26 +1,26 @@
-Origin: 测试源
-Label: 测试源
+Origin: 星河软件源
+Label: 星河软件源
 Suite: stable
 Version: 1.0
-Codename: ios
+Codename: galaxy
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
-Description: RepoConsole App 测试专用源 · 全部为测试包，可安全删除
+Description: 星河软件源 · iOS 越狱插件仓库
 
 MD5Sum:
- b7d8db651bf1b75b436dd5bb5e18356b 7299 Packages
- 1d5aa53c6ff52dce8313f232428a6f4d 2406 Packages.bz2
- 117319424e610d2edfa3368828d5456e 2144 Packages.xz
- cfc09e3c281e8cdc1e2357fa4c6a05c7 2223 Packages.zst
+ 94e8e71fa55ed19df9b80e6c64109b19 8630 Packages
+ 00e0ca9b9b749098698ea9ca4496d2f6 2710 Packages.bz2
+ bbad475000ce17e9ce1ca0eea2003da7 2484 Packages.xz
+ 2a919f031024af4e6cb9075b0acc14de 2660 Packages.zst
 
 SHA1:
- dd45774e32787d32eb596b64d017e36ac684378e 7299 Packages
- 78e1136b8368b7831a55b5c7ad2228af709c9e2e 2406 Packages.bz2
- 39eccca17b6e803dabb5aa80255dfed805071eaa 2144 Packages.xz
- 30f9293a8bcb3d0bac88ec198a85896f6bd29340 2223 Packages.zst
+ bc93257769d1fe094ace6bf2e0b0f4e3eaffaae3 8630 Packages
+ 9e2888d01bd9f3d3fa4487fa15d5204d8d1caeb0 2710 Packages.bz2
+ 9ba7b0926762d48fd04089f690c78a39a6c9cfd7 2484 Packages.xz
+ 3f833a41b49f4842f8fb40910d06046656515dd8 2660 Packages.zst
 
 SHA256:
- 04586301d0c91cdd25feae5d16a0a7b6d3ebcfb1c29195b656c98681281dfb2e 7299 Packages
- 48b2015b97a9a2a37d206b75df7804260b0c2804c0ab314c58e73dda04e0d514 2406 Packages.bz2
- c5493a9dac18e8261621f4c8e621a548378559c5c16e824bc6d4963b7ac888d5 2144 Packages.xz
- b3b48e0e7f0475bbf8896d9df6c465af00f10218ded192ba29e4a9bcd0547035 2223 Packages.zst
+ 49147f025fb6391c63d02c795132065fd31459d393f22b181366d90d5492c9ef 8630 Packages
+ 0dcb214e773b5e6a255d290aef8c82041ba7f94f79ecfcf4a3b3e696b96678a7 2710 Packages.bz2
+ 93f943b818b17254e30e8d2e33c57ef43439a6cba3760d80ae09dd5eceba9f7f 2484 Packages.xz
+ cdfba1dd6d110d8101360193d2cf3a238d76e4a5ba0928e42a24bf54d2e9f305 2660 Packages.zst

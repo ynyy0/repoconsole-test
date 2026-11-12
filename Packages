@@ -1,208 +1,220 @@
-Package: com.test.charity
-Version: 1.0
-Architecture: iphoneos-arm64
-Maintainer: 小菜 <test@example.com>
+Package: com.galaxy.cleaner
+Version: 2.1
+Architecture: iphoneos-arm64e
+Maintainer: 星河工作室 <repo@galaxy.example.com>
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.test.charity_1.0_iphoneos-arm64.deb
-Size: 736
-MD5sum: 8d84b597cbff6a8c68a50bf80bd857cd
-SHA1: d47c3fb2039bb27f32ce77aed41318efbe35a984
-SHA256: a85c04e77e87c5ddeb4eb9e8c4f02e2293e3006de164246f80a61bb71fe649eb
-Section: 公益插件
-Description: 公益插件分组测试
-Author: 小菜
-Name: 公益测试插件
-Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
+Filename: debs/com.galaxy.cleaner_2.1_iphoneos-arm64e.deb
+Size: 858
+MD5sum: 362ac560bfd2dc013b3de00228207128
+SHA1: 089bfb927039bafb878b3813d46a74e3ec4e3347
+SHA256: c27196a850561e87fbfe3e49743970ca674bc5433132fd267e9f9c2f7eb7fbd4
+Section: 实用工具
+Homepage: https://ynyy0.github.io/repoconsole-test/
+Description: 按应用扫描缓存与临时文件，可设置定时清理。
+Author: 星河工作室
+Name: 缓存清理助手
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.cleaner.png
 
-Package: com.test.gesture
-Version: 1.0
-Architecture: iphoneos-arm
-Maintainer: 小菜 <test@example.com>
+Package: com.galaxy.darkmode
+Version: 1.0.1
+Architecture: iphoneos-arm64e
+Maintainer: 星河工作室 <repo@galaxy.example.com>
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.test.gesture_1.0_iphoneos-arm.deb
-Size: 754
-MD5sum: 04af792034670b40af10eaf6decf0510
-SHA1: a8c08208783cb1c452849c61c3412b8d72c25c87
-SHA256: 5b9c958fab24b52574d9edcab76824effd59bd8d3d9132a7b5baa7db8e9d6020
+Filename: debs/com.galaxy.darkmode_1.0.1_iphoneos-arm64e.deb
+Size: 854
+MD5sum: 6a7121185aac39a4f24d8735f97023de
+SHA1: 4e75347b7f7023efc2e958aaf5781b6516346035
+SHA256: 46403283b8e7d88a9bf866bf9b50c03f433235af43baa186648b5b51bc190fee
+Section: 美化
+Homepage: https://ynyy0.github.io/repoconsole-test/
+Description: 为未适配深色的界面补充暗色渲染规则。
+Author: 星河工作室
+Name: 全局深色增强
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.darkmode.png
+
+Package: com.galaxy.iconpack
+Version: 3.0
+Architecture: iphoneos-arm64
+Maintainer: 星河工作室 <repo@galaxy.example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.galaxy.iconpack_3.0_iphoneos-arm64.deb
+Size: 860
+MD5sum: f3dbd9b6a09c89251871da0f9501b64d
+SHA1: 493f0e10a3f39e52ec40af51c40a2282fad6ff28
+SHA256: cdad3c6b9e442a69305d369b008cc6e52aebbf6bcf6a0c00ae78361d68a74bec
+Section: 美化
+Homepage: https://ynyy0.github.io/repoconsole-test/
+Description: 一套低饱和度的圆角图标，涵盖常见系统应用。
+Author: 星河工作室
+Name: 图标包 · 极简
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.iconpack.png
+
+Package: com.galaxy.keyboard
+Version: 1.1
+Architecture: iphoneos-arm64
+Maintainer: 星河工作室 <repo@galaxy.example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.galaxy.keyboard_1.1_iphoneos-arm64.deb
+Size: 844
+MD5sum: c78fcf6e3cfcf113d9bf0580b19a08c5
+SHA1: df998e8ae95973459817eb579fbfe52f4a392073
+SHA256: 8b3f9ecd24cec2cafa793151e81b34e87a5e51a48448c458d74271bf9d5f124e
 Section: 手势键盘
-Description: iphoneos-arm 架构（无根 arm 测试）
-Author: 小菜
-Name: 手势测试
-Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
+Homepage: https://ynyy0.github.io/repoconsole-test/
+Description: 为按键提供可调节力度的触感反馈。
+Author: 星河工作室
+Name: 键盘震动反馈
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.keyboard.png
 
-Package: com.test.misc
-Version: 1.0
-Architecture: iphoneos-arm64e
-Maintainer: 小菜 <test@example.com>
-Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.test.misc_1.0_iphoneos-arm64e.deb
-Size: 732
-MD5sum: 9bd15ff1099735a2df9d9b00e3e409d3
-SHA1: 3eae284b52c410fe8de900dba42b682ac9ae185e
-SHA256: dc880598a1e393adb2499dc817c1928329bd0bc57a4dc15fd36091f525cf41fe
-Section: 杂七杂八
-Description: 杂七杂八分组测试
-Author: 小菜
-Name: 杂项测试
-Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
-
-Package: com.test.nosec
-Version: 1.0
+Package: com.galaxy.netguard
+Version: 0.9.3
 Architecture: iphoneos-arm64
-Maintainer: 小菜 <test@example.com>
+Maintainer: 星河工作室 <repo@galaxy.example.com>
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.test.nosec_1.0_iphoneos-arm64.deb
-Size: 768
-MD5sum: 520bd59f98090216b003939c45d0c492
-SHA1: 2d1866df003019ad4ee711b4bd94f23adf6650d2
-SHA256: d959b1242a5179a928be1756f241fad9e2b38f00c9bd833be7d886fe4e94e309
-Description: deb 里刻意不写 Section，验证索引补「未分类」
-Author: 小菜
-Name: 未分类测试
-Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
-Section: 未分类
+Filename: debs/com.galaxy.netguard_0.9.3_iphoneos-arm64.deb
+Size: 862
+MD5sum: f233581c2d4223b1a77446070fdf5592
+SHA1: fb9910b1eca24c4492f086add46a8194e48cb12b
+SHA256: 149132a7426fd52517d40b3caa94d7c386a932f514441f9e49676652f9fc3823
+Section: Tweaks
+Homepage: https://ynyy0.github.io/repoconsole-test/
+Description: 按域名拦截广告与跟踪请求，支持自定义规则。
+Author: 星河工作室
+Name: 网络防护
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.netguard.png
 
-Package: com.test.override
-Version: 1.0
-Architecture: iphoneos-arm64
-Maintainer: 小菜 <test@example.com>
-Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.test.override_1.0_iphoneos-arm64.deb
-Size: 802
-MD5sum: 595c34b90a5bfb2a633f1ab2a8c9dcd1
-SHA1: dd1758fc7244d4cbb30df57b3aa45d5b34394d60
-SHA256: 9a891b6def645157409351940a3b9fdaa7b65a567b0bdeebe332dabcaae94c6d
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.test.override.png?v=088b2dba
-Name: 已被覆盖的名字
-Description: 这条描述来自 repo-meta 包名键覆盖
-Author: 小菜
-Section: 工具
-
-Package: com.test.pathonly
-Version: 1.0
-Architecture: iphoneos-arm64
-Maintainer: 小菜 <test@example.com>
-Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.test.pathonly_1.0_iphoneos-arm64.deb
-Size: 786
-MD5sum: 91d4bcbc85f0400354c024dd6935f774
-SHA1: 8ca7cba073f18da6a00599750a9401225c5b4717
-SHA256: d97248da2c04b7a56a06a83480006816e409e95b162ee4a73a61d2e4db4e5509
-Description: deb 原始分类 Tweaks，repo-meta 只有路径键改到公益插件
-Author: 小菜
-Name: 路径键测试
-Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
-Section: 公益插件
-
-Package: com.test.split
-Version: 1.0
-Architecture: iphoneos-arm64
-Maintainer: 小菜 <test@example.com>
-Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.test.split_1.0_iphoneos-arm64.deb
-Size: 726
-MD5sum: 64d2530a3406aeaf7869d2306937343d
-SHA1: 96c4730c42f5a293c503620e4766085f114143c3
-SHA256: f082fb81dbc40b1fc243a005caafc5c94c2b43791124dc3c07c09e2fbc75e7dd
-Section: 分屏插件
-Description: 分屏插件分组测试
-Author: 小菜
-Name: 分屏测试
-Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
-
-Package: com.test.toolbox
-Version: 1.0
-Architecture: iphoneos-arm64
-Maintainer: 小菜 <test@example.com>
-Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.test.toolbox_1.0_iphoneos-arm64.deb
-Size: 764
-MD5sum: c987f0587a17663caf46850f76cc5942
-SHA1: 2f7b4b1cc832a70b6819168ba8d34938575e38b5
-SHA256: 64a42ef8ae11b974c3c3b93293a1b336244763f103f0f14e41974e07d146fe54
-Section: 工具
-Description: 工具类测试包，用于验证分组显示
-Author: 小菜
-Name: 测试工具箱
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.test.toolbox.png?v=97207d1d
-
-Package: com.test.toolbox
+Package: com.galaxy.splitview
 Version: 2.0
-Architecture: iphoneos-arm64
-Maintainer: 小菜 <test@example.com>
-Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.test.toolbox_2.0_iphoneos-arm64.deb
-Size: 786
-MD5sum: e4104f96d6ed95e86e3b2b7b027a3b01
-SHA1: 31361ccf78c669ae0dce1fbbb5685fdcd9a04410
-SHA256: 7de1dac5c01b96680fd2f765b1ab049d215c9c23f0fed11187bd0fbd9697ea28
-Section: 工具
-Description: 工具类测试包（2.0 版本，验证同包多版本只显示一个）
-Author: 小菜
-Name: 测试工具箱
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.test.toolbox.png?v=97207d1d
-
-Package: com.test.toolkit2
-Version: 1.0
 Architecture: iphoneos-arm64e
-Maintainer: 小菜 <test@example.com>
+Maintainer: 星河工作室 <repo@galaxy.example.com>
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.test.toolkit2_1.0_iphoneos-arm64e.deb
-Size: 792
-MD5sum: 18d2b35139c4432c0a830304b3868302
-SHA1: 647f4c8341397549909263f9b0eb6eb8d326a8a9
-SHA256: c0fed386b9f3d48cc6148edfd9d3eb3682ab0a659a0041e2709a8316b8108d97
-Section: 工具
-Description: arm64e 架构，且没有自定义图标（验证回退源图标）
-Author: 小菜
-Name: 测试工具二号
-Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
+Filename: debs/com.galaxy.splitview_2.0_iphoneos-arm64e.deb
+Size: 856
+MD5sum: 7e95e2fa483908c721f1e60731d30974
+SHA1: a00c13c65eb4bae17e3a0f6a7907857eb66a0b3a
+SHA256: b2fe2473911af81b551034b33c2970f0e6076ab448ba7b6a0aab5a47ed1d88d3
+Section: 分屏插件
+Homepage: https://ynyy0.github.io/repoconsole-test/
+Description: 在支持的机型上启用并排显示与悬浮窗口。
+Author: 星河工作室
+Name: 分屏多任务
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.splitview.png
 
-Package: com.test.tweak.alpha
-Version: 1.2
+Package: com.galaxy.statusbar
+Version: 1.4
+Architecture: iphoneos-arm64
+Maintainer: 星河工作室 <repo@galaxy.example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.galaxy.statusbar_1.4_iphoneos-arm64.deb
+Size: 848
+MD5sum: 145d25edd20f557edf56eed5a3468cc4
+SHA1: 7e686db3cc8216a1ca10640ee4df7ae470c28d79
+SHA256: dd78e5b15a8feaea77665a359846fec111a9b40066980db5364942b62e32c7f7
+Section: 美化
+Homepage: https://ynyy0.github.io/repoconsole-test/
+Description: 自定义时间格式、信号样式与电量显示方式。
+Author: 星河工作室
+Name: 状态栏自定义
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.statusbar.png
+
+Package: com.galaxy.swipe
+Version: 2.2
+Architecture: iphoneos-arm
+Maintainer: 星河工作室 <repo@galaxy.example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.galaxy.swipe_2.2_iphoneos-arm.deb
+Size: 858
+MD5sum: 8f1f418b2f6a3b7b86ebd77568fc009f
+SHA1: 3618880a81a5421ebc682ef8a91f4ea76118ede4
+SHA256: 5c8457308c86ee44fe88f9215dd89e8c346e9658e3565ab8a4602ee9ed810a34
+Section: 手势键盘
+Homepage: https://ynyy0.github.io/repoconsole-test/
+Description: 扩展屏幕边缘手势，支持返回与多任务快速切换。
+Author: 星河工作室
+Name: 侧滑手势增强
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.swipe.png
+
+Package: com.galaxy.toolbox
+Version: 1.2.0
+Architecture: iphoneos-arm64
+Maintainer: 星河工作室 <repo@galaxy.example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.galaxy.toolbox_1.2.0_iphoneos-arm64.deb
+Size: 862
+MD5sum: f5cd7222f0a7054b2cae8a1d0aa20ec7
+SHA1: fc3afbe79df2ca24867a7aa3fa2249266a66f1fb
+SHA256: 43f646bef901af99be7c0369a358deecc50e156fbb4fc67bc9b2f5801fdbdafc
+Section: 实用工具
+Homepage: https://ynyy0.github.io/repoconsole-test/
+Description: 集合常用系统快捷开关与清理功能，支持控制中心集成。
+Author: 星河工作室
+Name: 星河工具箱
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.toolbox.png
+
+Package: com.galaxy.toolbox
+Version: 1.3.0
+Architecture: iphoneos-arm64
+Maintainer: 星河工作室 <repo@galaxy.example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.galaxy.toolbox_1.3.0_iphoneos-arm64.deb
+Size: 862
+MD5sum: 60f7a6d305eafedb3069dcff626b72a4
+SHA1: 4ac2f63b37b2d6f0894f91e3531c890f2f9abbe1
+SHA256: 25d062902fb7f2854a85e9c67bfa03ee28ae84d9646ef32bc52c14f5773f62bc
+Section: 实用工具
+Homepage: https://ynyy0.github.io/repoconsole-test/
+Description: 新增状态栏快捷入口，修复部分机型上的开关延迟。
+Author: 星河工作室
+Name: 星河工具箱
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.toolbox.png
+
+Package: com.galaxy.tweakcore
+Version: 1.5
 Architecture: iphoneos-arm64e
-Maintainer: 小菜 <test@example.com>
+Maintainer: 星河工作室 <repo@galaxy.example.com>
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.test.tweak.alpha_1.2_iphoneos-arm64e.deb
-Size: 748
-MD5sum: eacba0e8e0f124d9e7c446b97804da43
-SHA1: e9661d8c8a9421d90940987fa0aaa9af319101c5
-SHA256: 59ddfc5f33ecd341cd778710967af3a52871d78c02e36f124ed5ed741c6073e3
+Filename: debs/com.galaxy.tweakcore_1.5_iphoneos-arm64e.deb
+Size: 860
+MD5sum: b608d85e70e394a8f3f9bd90aafae384
+SHA1: fce932186e041c5e203974882389700cda250f90
+SHA256: d4a8ae95a041138aaa474e7d7402dbf5a4e9d5ab9c7f0ba46689509f8f29f5e8
 Section: Tweaks
-Description: Tweaks 分组测试，arm64e
-Author: 小菜
-Name: 测试插件 Alpha
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.test.tweak.alpha.png?v=9cdb58d0
+Homepage: https://ynyy0.github.io/repoconsole-test/
+Description: 一组系统级行为调整选项，可按模块单独启用。
+Author: 星河工作室
+Name: 系统底层增强
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.tweakcore.png
 
-Package: com.test.tweak.beta
-Version: 0.9
+Package: com.galaxy.wxhelper
+Version: 4.0.2
 Architecture: iphoneos-arm64
-Maintainer: 小菜 <test@example.com>
+Maintainer: 星河工作室 <repo@galaxy.example.com>
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.test.tweak.beta_0.9_iphoneos-arm64.deb
-Size: 744
-MD5sum: 02bf6fc3a82df3760ce6b494e989bb42
-SHA1: a94a846491417736f27fcf618ab5409c9d8ce656
-SHA256: a75004ff92f1f161285064059172d0a9a6894608c64c3380d2df2e0c7aa62ee9
-Section: Tweaks
-Description: Tweaks 分组测试，arm64
-Author: 小菜
-Name: 测试插件 Beta
-Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
-
-Package: com.test.wx
-Version: 1.0
-Architecture: iphoneos-arm64
-Maintainer: 小菜 <test@example.com>
-Depends: mobilesubstrate (>= 0.9.5000)
-Filename: debs/com.test.wx_1.0_iphoneos-arm64.deb
-Size: 738
-MD5sum: 56ab9cc6a1bbf28ff3e4f9dcf21cda78
-SHA1: 2395effb0df0b08d6c8f3a1d176d3c1edccc3b57
-SHA256: dcf66deaf40915ecbad0e69ebf64fdce33b0ade479cc34e3844fbcfaac88bd37
+Filename: debs/com.galaxy.wxhelper_4.0.2_iphoneos-arm64.deb
+Size: 844
+MD5sum: 9d08a5168d1f11934708157127df1263
+SHA1: 271d2f54dc48468594755b61b6b5bd7c3be8cefd
+SHA256: 858f430c44dd1cba06b63e4b909f74a038d476dfda3b5e8b824ed56766fadec3
 Section: 微信插件
-Description: 微信插件分组测试
-Author: 小菜
-Name: 微信测试助手
-Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
+Homepage: https://ynyy0.github.io/repoconsole-test/
+Description: 消息批量处理与聊天界面增强。
+Author: 星河工作室
+Name: 微信辅助增强
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxhelper.png
 
+Package: com.galaxy.wxred
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: 星河工作室 <repo@galaxy.example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.galaxy.wxred_1.0_iphoneos-arm64.deb
+Size: 846
+MD5sum: 643c11c72902c0abefbd9b66eca940b9
+SHA1: e1620399eb2ed67b0fd357e82476ec5cd1c50ed1
+SHA256: 24cfcea5fd76619d1d15306604f20a537a7e44e5733aeaf38a00c9e36cadddcd
+Section: 微信插件
+Homepage: https://ynyy0.github.io/repoconsole-test/
+Description: 自定义通知提示音与角标规则。
+Author: 星河工作室
+Name: 消息提醒增强
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxred.png
