@@ -93,7 +93,7 @@ Size: 856
 MD5sum: 7e95e2fa483908c721f1e60731d30974
 SHA1: a00c13c65eb4bae17e3a0f6a7907857eb66a0b3a
 SHA256: b2fe2473911af81b551034b33c2970f0e6076ab448ba7b6a0aab5a47ed1d88d3
-Section: 分屏插件
+Section: 美化
 Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 在支持的机型上启用并排显示与悬浮窗口。
 Author: 星河工作室
@@ -218,4 +218,3 @@ Description: 自定义通知提示音与角标规则。
 Author: 星河工作室
 Name: 消息提醒增强
 Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxred.png?v=f411c337
-

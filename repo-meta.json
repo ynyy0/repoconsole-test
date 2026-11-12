@@ -10,7 +10,11 @@
       "section" : "分屏插件"
     },
     "com.galaxy.splitview" : {
-      "name" : "测试"
+      "cats" : [
+        "美化"
+      ],
+      "name" : "测试",
+      "section" : "美化"
     },
     "com.galaxy.wxhelper" : {
       "cats" : [
@@ -25,7 +29,11 @@
       "section" : "分屏插件"
     },
     "debs\/com.galaxy.splitview_2.0_iphoneos-arm64e.deb" : {
-      "name" : "测试"
+      "cats" : [
+        "美化"
+      ],
+      "name" : "测试",
+      "section" : "美化"
     },
     "debs\/com.galaxy.wxhelper_4.0.2_iphoneos-arm64.deb" : {
       "cats" : [
