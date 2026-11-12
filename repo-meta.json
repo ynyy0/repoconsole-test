@@ -21,6 +21,12 @@
       ],
       "section" : "测试"
     },
+    "com.galaxy.keyboard" : {
+      "cats" : [
+        "你好"
+      ],
+      "section" : "你好"
+    },
     "com.galaxy.netguard" : {
       "cats" : [
         "分屏插件"
@@ -59,6 +65,12 @@
         "测试"
       ],
       "section" : "测试"
+    },
+    "debs\/com.galaxy.keyboard_1.1_iphoneos-arm64.deb" : {
+      "cats" : [
+        "你好"
+      ],
+      "section" : "你好"
     },
     "debs\/com.galaxy.netguard_0.9.3_iphoneos-arm64.deb" : {
       "cats" : [
