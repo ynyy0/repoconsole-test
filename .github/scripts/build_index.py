@@ -89,6 +89,11 @@ def main():
         # 单个损坏的 deb 只会被跳过，不再导致整个部署失败
         print('dpkg-scanpackages reported issues (bad debs are skipped):')
         print(result.stderr.strip()[:2000])
+    if '\ufffd' in result.stdout:
+        for ln in result.stdout.splitlines():
+            if '\ufffd' in ln:
+                print('WARN: dpkg-scanpackages 输出含非 UTF-8 字节:', ln.strip()[:120])
+
     stanzas = [s for s in result.stdout.rstrip('\n').split('\n\n') if s.strip()]
     updated = []
 
