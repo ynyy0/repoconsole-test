@@ -80,7 +80,7 @@ Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 按域名拦截广告与跟踪请求，支持自定义规则。
 Author: 星河工作室
 Name: 网络防护
-Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.netguard.png?v=78b3ba61
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.netguard.png?v=b88616e2
 Section: 分屏插件
 
 Package: com.galaxy.splitview
@@ -218,3 +218,4 @@ Description: 自定义通知提示音与角标规则。
 Author: 星河工作室
 Name: 消息提醒增强
 Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxred.png?v=f411c337
+
