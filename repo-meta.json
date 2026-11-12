@@ -1,12 +1,11 @@
 {
   "categories" : [
     "Tweaks",
+    "你好",
     "分屏插件",
     "实用工具",
     "微信插件",
-    "手势键盘",
-    "测试",
-    "你好"
+    "测试"
   ],
   "plugins" : {
     "com.galaxy.darkmode" : {
@@ -47,6 +46,12 @@
         "测试"
       ],
       "section" : "测试"
+    },
+    "com.galaxy.swipe" : {
+      "cats" : [
+        "未分类"
+      ],
+      "section" : "未分类"
     },
     "com.galaxy.wxhelper" : {
       "cats" : [
@@ -92,6 +97,12 @@
         "测试"
       ],
       "section" : "测试"
+    },
+    "debs\/com.galaxy.swipe_2.2_iphoneos-arm.deb" : {
+      "cats" : [
+        "未分类"
+      ],
+      "section" : "未分类"
     },
     "debs\/com.galaxy.wxhelper_4.0.2_iphoneos-arm64.deb" : {
       "cats" : [
