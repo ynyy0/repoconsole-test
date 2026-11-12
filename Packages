@@ -212,10 +212,9 @@ Size: 846
 MD5sum: 643c11c72902c0abefbd9b66eca940b9
 SHA1: e1620399eb2ed67b0fd357e82476ec5cd1c50ed1
 SHA256: 24cfcea5fd76619d1d15306604f20a537a7e44e5733aeaf38a00c9e36cadddcd
-Section: 微信插件
+Section: 未分类
 Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 自定义通知提示音与角标规则。
 Author: 星河工作室
 Name: 消息提醒增强
 Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxred.png?v=f411c337
-

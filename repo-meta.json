@@ -4,8 +4,8 @@
     "你好",
     "分屏插件",
     "实用工具",
-    "微信插件",
-    "测试"
+    "测试",
+    "未分类"
   ],
   "plugins" : {
     "com.galaxy.darkmode" : {
@@ -59,6 +59,12 @@
       ],
       "section" : "测试"
     },
+    "com.galaxy.wxred" : {
+      "cats" : [
+        "未分类"
+      ],
+      "section" : "未分类"
+    },
     "debs\/com.galaxy.darkmode_1.0.1_iphoneos-arm64e.deb" : {
       "cats" : [
         "测试"
@@ -109,6 +115,12 @@
         "测试"
       ],
       "section" : "测试"
+    },
+    "debs\/com.galaxy.wxred_1.0_iphoneos-arm64.deb" : {
+      "cats" : [
+        "未分类"
+      ],
+      "section" : "未分类"
     }
   }
 }
