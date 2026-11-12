@@ -127,12 +127,12 @@ Size: 858
 MD5sum: 8f1f418b2f6a3b7b86ebd77568fc009f
 SHA1: 3618880a81a5421ebc682ef8a91f4ea76118ede4
 SHA256: 5c8457308c86ee44fe88f9215dd89e8c346e9658e3565ab8a4602ee9ed810a34
-Section: 未分类
 Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 扩展屏幕边缘手势，支持返回与多任务快速切换。
 Author: 星河工作室
 Name: 侧滑手势增强
 Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.swipe.png?v=59f72239
+Section: 未分类
 
 Package: com.galaxy.toolbox
 Version: 1.2.0
@@ -218,3 +218,4 @@ Description: 自定义通知提示音与角标规则。
 Author: 星河工作室
 Name: 消息提醒增强
 Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxred.png?v=f411c337
+
