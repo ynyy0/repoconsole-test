@@ -1,87 +1,51 @@
 # -*- coding: utf-8 -*-
-"""Build standard APT indexes from debs/.
+"""Build the APT Packages index from debs/.
 
-A plain repository build: scan debs, add missing Icon fields, write Packages,
-compress it and regenerate the Release checksums. No application-specific
-metadata or overrides are involved.
-
-Run by .github/workflows/release.yml and .github/workflows/deploy-pages.yml.
+Shared by .github/workflows/release.yml (commits the result back to the repo)
+and .github/workflows/deploy-pages.yml (deploys the freshly built site).
 """
 import hashlib
+import json
 import os
-import re
 import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-BASE_URL = 'https://ynyy0.github.io/repoconsole-test/'
-ICON_BASE = BASE_URL + 'icons/'
-DEFAULT_ICON = BASE_URL + 'CydiaIcon.png'
-INDEX_FILES = ('Packages', 'Packages.bz2', 'Packages.xz', 'Packages.zst')
-NL = '\n'
+ICON_BASE = 'https://ynyy0.github.io/repoconsole-test/icons/'
+DEFAULT_ICON = 'https://ynyy0.github.io/repoconsole-test/CydiaIcon.png'
+META_FILE = ROOT / 'repo-meta.json'
 
 
-def scan_packages():
-    """dpkg-scanpackages with a fixed UTF-8 locale (its output carries raw
-    control-field bytes, which must not depend on the runner's LANG)."""
-    env = dict(os.environ, LC_ALL='C.UTF-8', LANG='C.UTF-8')
-    result = subprocess.run(
-        ['dpkg-scanpackages', '-m', 'debs', '/dev/null'],
-        cwd=ROOT, capture_output=True, check=False, env=env,
-        encoding='utf-8', errors='replace',
-    )
-    if result.returncode != 0:
-        print('dpkg-scanpackages reported issues (bad debs are skipped):')
-        print(result.stderr.strip()[:2000])
-    if '\ufffd' in result.stdout:
-        for line in result.stdout.splitlines():
-            if '\ufffd' in line:
-                print('WARN: non-UTF-8 byte in dpkg output:', line.strip()[:120])
-    return result.stdout
-
-
-def add_icons(stdout):
-    """Fill in Icon: for stanzas whose deb control does not provide one."""
-    stanzas = [s for s in stdout.rstrip(NL).split(NL + NL) if s.strip()]
-    out = []
-    for stanza in stanzas:
-        lines = stanza.splitlines()
-        fields = {}
-        for line in lines:
-            if ': ' in line:
-                key, value = line.split(': ', 1)
-                fields[key] = value
-        if 'Icon:' not in fields:
-            package = fields.get('Package', '')
-            candidate = ROOT / 'icons' / (package + '.png')
-            if not candidate.is_file() and package:
-                matches = [p for p in (ROOT / 'icons').glob('*.png')
-                           if p.stem.lower() == package.lower()]
-                candidate = matches[0] if matches else candidate
-            url = ICON_BASE + candidate.name if candidate.is_file() else DEFAULT_ICON
-            lines.append('Icon: ' + url)
-        out.append(NL.join(lines))
-    return (NL + NL).join(out) + NL
-
-
-def compress():
-    """Create the three compressed indexes. Tooling is available on runners;
-    missing tools only mean that variant is skipped (Release lists what exists)."""
-    plain = (ROOT / 'Packages').read_bytes()
-    (ROOT / 'Packages.bz2').write_bytes(__import__('bz2').compress(plain, 9))
-    (ROOT / 'Packages.xz').write_bytes(__import__('lzma').compress(
-        plain, format=__import__('lzma').FORMAT_XZ, preset=9))
+def load_meta():
+    """完整读取管理台写入的元数据（plugins 覆盖 + 全局设置）。"""
+    if not META_FILE.exists():
+        return {}
     try:
-        subprocess.run(
-            ['zstd', '--ultra', '-22', '-q', '-f', '-o', 'Packages.zst', 'Packages'],
-            cwd=ROOT, check=True, capture_output=True,
-        )
-    except (OSError, subprocess.CalledProcessError):
-        print('WARN: zstd unavailable, Packages.zst not refreshed')
+        return json.loads(META_FILE.read_text(encoding='utf-8'))
+    except Exception:
+        return {}
+
+
+def find_override(overrides, package):
+    """精确匹配优先，再兼容 deb control 大小写差异。"""
+    if package in overrides:
+        return overrides[package]
+    for key, value in overrides.items():
+        if key.lower() == package.lower():
+            return value
+    return {}
+
+
+def icon_version(path):
+    """图标内容哈希：换图后 URL 变化，客户端不会拿旧缓存。"""
+    try:
+        return hashlib.sha256(path.read_bytes()).hexdigest()[:8]
+    except Exception:
+        return '0'
 
 
 def write_release():
-    """Keep the Release header as written by the repo owner, recompute checksums."""
+    """重建 Release 的校验字段；头部（Origin/Label/Architectures 等）原样保留。"""
     release_file = ROOT / 'Release'
     header = []
     if release_file.is_file():
@@ -89,31 +53,116 @@ def write_release():
             if line.rstrip() in ('MD5Sum:', 'SHA1:', 'SHA256:'):
                 break
             header.append(line)
-    header = [line for line in header if line.strip()]
-
-    def section(title, algo):
-        rows = [title + ':']
-        for name in INDEX_FILES:
+    def hash_section(title, algo):
+        lines = [title + ':']
+        for name in ('Packages', 'Packages.bz2', 'Packages.xz', 'Packages.zst'):
             f = ROOT / name
             if f.is_file():
-                rows.append(' %s %d %s' % (
-                    hashlib.new(algo, f.read_bytes()).hexdigest(), f.stat().st_size, name))
-        return rows
-
-    text = (NL.join(header) + NL + NL
-            + NL.join(section('MD5Sum', 'md5')) + NL + NL
-            + NL.join(section('SHA1', 'sha1')) + NL + NL
-            + NL.join(section('SHA256', 'sha256')) + NL)
+                digest = hashlib.new(algo, f.read_bytes()).hexdigest()
+                lines.append(' %s %d %s' % (digest, f.stat().st_size, name))
+        return lines
+    NL = chr(10)
+    text = (NL.join(header).rstrip(NL) + NL + NL
+            + NL.join(hash_section('MD5Sum', 'md5')) + NL + NL
+            + NL.join(hash_section('SHA1', 'sha1')) + NL + NL
+            + NL.join(hash_section('SHA256', 'sha256')) + NL)
     release_file.write_text(text, encoding='utf-8')
 
 
 def main():
-    text = add_icons(scan_packages())
-    (ROOT / 'Packages').write_text(text, encoding='utf-8')
-    compress()
+    meta = load_meta()
+    overrides = meta.get('plugins', {}) or {}
+    # 源图标内容哈希，用于单插件「使用源图标」和默认兜底图标的版本号
+    source_icon_file = ROOT / 'CydiaIcon.png'
+    source_v = icon_version(source_icon_file) if source_icon_file.is_file() else '0'
+    # 固定 UTF-8 locale：runner 的 LANG=C 会让中文控制字段出现非 UTF-8 字节
+    scan_env = dict(os.environ, LC_ALL='C.UTF-8', LANG='C.UTF-8')
+    result = subprocess.run(
+        ['dpkg-scanpackages', '-m', 'debs', '/dev/null'],
+        cwd=ROOT, capture_output=True, check=False, env=scan_env,
+        encoding='utf-8', errors='replace',
+    )
+    if result.returncode != 0:
+        # 单个损坏的 deb 只会被跳过，不再导致整个部署失败
+        print('dpkg-scanpackages reported issues (bad debs are skipped):')
+        print(result.stderr.strip()[:2000])
+    stanzas = [s for s in result.stdout.rstrip('\n').split('\n\n') if s.strip()]
+    updated = []
+
+    for stanza in stanzas:
+        lines = stanza.splitlines()
+        package = next(
+            (line.split(':', 1)[1].strip() for line in lines
+             if line.startswith('Package: ')),
+            None,
+        )
+        filename = next(
+            (line.split(':', 1)[1].strip().lstrip('./') for line in lines
+             if line.startswith('Filename: ')),
+            None,
+        )
+        if package:
+            icon_path = ROOT / 'icons' / f'{package}.png'
+            if not icon_path.is_file():
+                # deb control 里的包名大小写可能与索引不一致
+                matches = [p for p in (ROOT / 'icons').glob('*.png')
+                           if p.stem.lower() == package.lower()]
+                if matches:
+                    icon_path = matches[0]
+            if icon_path.is_file():
+                lines = [line for line in lines if not line.startswith('Icon: ')]
+                lines.append(f'Icon: {ICON_BASE}{icon_path.name}?v={icon_version(icon_path)}')
+            elif not any(line.startswith('Icon: ') for line in lines):
+                lines.append(f'Icon: {DEFAULT_ICON}?v={source_v}')
+
+        # deb control 里没写 Section 时补一个中性分类，避免 sileo 里出现空白分组
+        if not any(line.startswith('Section: ') for line in lines):
+            lines.append('Section: 未分类')
+
+        # 管理台写入的显示名 / 描述 / 分类覆盖：
+        # 路径键保存「同包名多变体」各自的设置，包名键是用户在管理台编辑后的最新意图。
+        # 两者合并，同名字段由包名键覆盖——否则编辑分类/作者会被旧的路径键永久盖住。
+        ov = {}
+        if filename:
+            ov = dict(find_override(overrides, filename) or {})
+        name_ov = find_override(overrides, package) or {}
+        if name_ov:
+            ov.update(name_ov)
+        if ov.get('name'):
+            lines = [line for line in lines if not line.startswith('Name: ')]
+            lines.append('Name: ' + str(ov['name']))
+        if ov.get('description'):
+            lines = [line for line in lines if not line.startswith('Description: ')]
+            lines.append('Description: ' + str(ov['description']))
+        if ov.get('author'):
+            lines = [line for line in lines if not line.startswith('Author: ')]
+            lines.append('Author: ' + str(ov['author']))
+        # 管理台里把插件移动到某个分类目录后，源索引的 Section 同步改成该分类
+        if ov.get('section'):
+            lines = [line for line in lines if not line.startswith('Section: ')]
+            lines.append('Section: ' + str(ov['section']))
+
+        # 单插件「使用源图标」：只把这一个插件的 Icon 换成源图标
+        if ov.get('icon'):
+            icon_url = str(ov['icon'])
+            if 'CydiaIcon.png' in icon_url:
+                icon_url = f'{DEFAULT_ICON}?v={source_v}'
+            lines = [line for line in lines if not line.startswith('Icon: ')]
+            lines.append('Icon: ' + icon_url)
+
+        updated.append('\n'.join(lines))
+
+    (ROOT / 'Packages').write_text('\n\n'.join(updated) + '\n\n', encoding='utf-8')
+
+    # 主页由仓库直接维护，索引脚本不再改写其中的名称
     write_release()
-    print('Indexed %d packages' % len(re.findall(r'^Package: ', text, re.M)))
+    print(f'Indexed {len(updated)} packages')
 
 
 if __name__ == '__main__':
-    main()
+    import sys
+    if '--release-only' in sys.argv:
+        write_release()
+        print('Release hashes refreshed')
+    else:
+        main()
