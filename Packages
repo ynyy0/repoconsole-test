@@ -59,12 +59,12 @@ Size: 844
 MD5sum: c78fcf6e3cfcf113d9bf0580b19a08c5
 SHA1: df998e8ae95973459817eb579fbfe52f4a392073
 SHA256: 8b3f9ecd24cec2cafa793151e81b34e87a5e51a48448c458d74271bf9d5f124e
-Section: 你好
 Homepage: https://ynyy0.github.io/repoconsole-test/
 Description: 为按键提供可调节力度的触感反馈。
 Author: 星河工作室
 Name: 键盘震动反馈
 Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.keyboard.png?v=5b1500e5
+Section: 你好
 
 Package: com.galaxy.netguard
 Version: 0.9.3
@@ -218,3 +218,4 @@ Description: 自定义通知提示音与角标规则。
 Author: 星河工作室
 Name: 消息提醒增强
 Icon: https://ynyy0.github.io/repoconsole-test/icons/com.galaxy.wxred.png?v=f411c337
+
