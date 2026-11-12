@@ -9,11 +9,23 @@
       ],
       "section" : "分屏插件"
     },
+    "com.galaxy.wxhelper" : {
+      "cats" : [
+        "美化"
+      ],
+      "section" : "美化"
+    },
     "debs\/com.galaxy.netguard_0.9.3_iphoneos-arm64.deb" : {
       "cats" : [
         "分屏插件"
       ],
       "section" : "分屏插件"
+    },
+    "debs\/com.galaxy.wxhelper_4.0.2_iphoneos-arm64.deb" : {
+      "cats" : [
+        "美化"
+      ],
+      "section" : "美化"
     }
   }
 }
