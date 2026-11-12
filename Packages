@@ -11,7 +11,7 @@ SHA256: d3116f4a01544201986c3a4f826812bf8ac2640844aa51609f17458cbad15837
 Section: 公益插件
 Description: 公益插件分组测试
 Author: 小菜
-Name: 公益测试包
+Name: 公益测试�
 Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
 
 Package: com.test.gesture

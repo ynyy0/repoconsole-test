@@ -6,3 +6,21 @@ Codename: ios
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: RepoConsole App 测试专用源 · 全部为测试包，可安全删除
+
+MD5Sum:
+ 3ec8e4ebdce41575bac7c0701b463aa5 7296 Packages
+ ff5d619f326c9b02e4483b36bec82805 2418 Packages.bz2
+ 06d94158c47e81d9bdea8e72e0922587 2148 Packages.xz
+ b206f44572b741780e4baa495ef21a51 2227 Packages.zst
+
+SHA1:
+ 510e0afedf396ccf2abf801d29f00b6b0d747a27 7296 Packages
+ 4fc711962b108713063b4cc173d0d157f36f27fd 2418 Packages.bz2
+ 79ec97fcd677ceafe92f217669f00e3456e3cae2 2148 Packages.xz
+ bc07d0c8d3c2cdee90945a4b1fa634ce8ab54853 2227 Packages.zst
+
+SHA256:
+ ebeef13793ab56bebf699da983b8283208950dbb210776a1ac81ab486944d644 7296 Packages
+ 97433153ab772ffb532ee12d38bd699058868c91e9bd2e2726342ea775a6006c 2418 Packages.bz2
+ ff38bd99fce4651bb8709332749b16121c18c2d1810b56c7ce1a4e61e40c7d07 2148 Packages.xz
+ 277a26037af5a4e6040838c0238c205f2aed20c8fe31ed3a71ce32d75ce4b13b 2227 Packages.zst
