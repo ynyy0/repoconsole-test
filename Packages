@@ -1,0 +1,208 @@
+Package: com.test.charity
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: 小菜 <test@example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.test.charity_1.0_iphoneos-arm64.deb
+Size: 738
+MD5sum: bb72bb8df0b7d7da492e1a593f417f15
+SHA1: 57c56776ed864aaf974dcec5306b011b0ee795e8
+SHA256: d3116f4a01544201986c3a4f826812bf8ac2640844aa51609f17458cbad15837
+Section: 公益插件
+Description: 公益插件分组测试
+Author: 小菜
+Name: 公益测试包
+Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
+
+Package: com.test.gesture
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: 小菜 <test@example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.test.gesture_1.0_iphoneos-arm.deb
+Size: 752
+MD5sum: 2d4a04419ab36bad96095548f447fc24
+SHA1: 57f603253b684d792b42085cc3c723b2eab40582
+SHA256: f58f9b14f1e81bbaac0b69396e6b64e37ddf1d6239bfd699585b584dbf9a680c
+Section: 手势键盘
+Description: iphoneos-arm 架构（无根 arm 测试）
+Author: 小菜
+Name: 手势测试
+Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
+
+Package: com.test.misc
+Version: 1.0
+Architecture: iphoneos-arm64e
+Maintainer: 小菜 <test@example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.test.misc_1.0_iphoneos-arm64e.deb
+Size: 734
+MD5sum: 2220488a308aec59fb11cf0959495f53
+SHA1: 487ac44592cff38025b810a8571dcff29f732fcf
+SHA256: 892371fbf0103c379b3aba1652ed2d1aece7a9ebcdf824a7b16047c503191fd1
+Section: 杂七杂八
+Description: 杂七杂八分组测试
+Author: 小菜
+Name: 杂项测试
+Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
+
+Package: com.test.nosec
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: 小菜 <test@example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.test.nosec_1.0_iphoneos-arm64.deb
+Size: 768
+MD5sum: 00b53c0cd91dd1e6eaaeaae8aab7c80f
+SHA1: 1544d43a39ef70a6da8942bae517c5532ef722cd
+SHA256: 9066646eb79419fbd3f85ea677c9e3839f61710baad0de51425778675380d261
+Description: deb 里刻意不写 Section，验证索引补「未分类」
+Author: 小菜
+Name: 未分类测试
+Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
+Section: 未分类
+
+Package: com.test.override
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: 小菜 <test@example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.test.override_1.0_iphoneos-arm64.deb
+Size: 800
+MD5sum: 8acf9da5d4e7262859ee262602fd6c37
+SHA1: 84fe344a82c06805c7da9e485c1b38f0ad702e61
+SHA256: 7624b954c5393309c0666e6562eef659c46bc0c6622657de3a4467252dec1d3a
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.test.override.png?v=088b2dba
+Name: 已被覆盖的名字
+Description: 这条描述来自 repo-meta 包名键覆盖
+Author: 小菜
+Section: 工具
+
+Package: com.test.pathonly
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: 小菜 <test@example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.test.pathonly_1.0_iphoneos-arm64.deb
+Size: 788
+MD5sum: 9456751ef65ebacced3533f4e9420991
+SHA1: 3c06dc97de848fd01c9d82e3fcdec4a6ba6d2920
+SHA256: a2a5f8873282cee545dba8ace7939157bd11a8672c4802a6c5d61effb7840d3e
+Description: deb 原始分类 Tweaks，repo-meta 只有路径键改到公益插件
+Author: 小菜
+Name: 路径键测试
+Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
+Section: 公益插件
+
+Package: com.test.split
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: 小菜 <test@example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.test.split_1.0_iphoneos-arm64.deb
+Size: 728
+MD5sum: 46d8cc13e176685bab40affd1ed8e5b3
+SHA1: 736733570a752c04d5b73f747f411eaf5ba298f5
+SHA256: 03d4091c25603e0a87cd86f6fddc6b55a9f9991de7eff3652d44ca4261879b85
+Section: 分屏插件
+Description: 分屏插件分组测试
+Author: 小菜
+Name: 分屏测试
+Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
+
+Package: com.test.toolbox
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: 小菜 <test@example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.test.toolbox_1.0_iphoneos-arm64.deb
+Size: 764
+MD5sum: 88e57e3452ea0901f6245bbae8ba2772
+SHA1: 5c8ea861e10a1b7164461e4503c6313f3942986c
+SHA256: bad2401c4b9e2dbc45a0fa946826e19fa1525f11c013a369b3bd0589ab1b9684
+Section: 工具
+Description: 工具类测试包，用于验证分组显示
+Author: 小菜
+Name: 测试工具箱
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.test.toolbox.png?v=97207d1d
+
+Package: com.test.toolbox
+Version: 2.0
+Architecture: iphoneos-arm64
+Maintainer: 小菜 <test@example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.test.toolbox_2.0_iphoneos-arm64.deb
+Size: 784
+MD5sum: 0159e5c7fc9f178612b5f66ec663bf2a
+SHA1: 7f2540282de104c32f390b79ff2f2612c0d2f6f9
+SHA256: b65c40ca27c7861ac1cbc0fe51868cc9b59b3800c61254d2e9b8e1cf3adbdd6a
+Section: 工具
+Description: 工具类测试包（2.0 版本，验证同包多版本只显示一个）
+Author: 小菜
+Name: 测试工具箱
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.test.toolbox.png?v=97207d1d
+
+Package: com.test.toolkit2
+Version: 1.0
+Architecture: iphoneos-arm64e
+Maintainer: 小菜 <test@example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.test.toolkit2_1.0_iphoneos-arm64e.deb
+Size: 794
+MD5sum: 56b9ab47b8ec5eba617ab9f9b0ef5e45
+SHA1: a347e12d5c3408085b8d50a2887b654888f282c2
+SHA256: bac06590cc83512e2a5d4ba0b251d3fe21dd8b511107e0284f5a4524e126f639
+Section: 工具
+Description: arm64e 架构，且没有自定义图标（验证回退源图标）
+Author: 小菜
+Name: 测试工具二号
+Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
+
+Package: com.test.tweak.alpha
+Version: 1.2
+Architecture: iphoneos-arm64e
+Maintainer: 小菜 <test@example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.test.tweak.alpha_1.2_iphoneos-arm64e.deb
+Size: 746
+MD5sum: 77869eef98810ec0c5b77034aa4f872b
+SHA1: 635a3edbd549017a625cb5f7feca525dd160d5b4
+SHA256: c8b7e076c64ce30b203a1622463822a5369cb3650c4c580078927d7cd1ba4f21
+Section: Tweaks
+Description: Tweaks 分组测试，arm64e
+Author: 小菜
+Name: 测试插件 Alpha
+Icon: https://ynyy0.github.io/repoconsole-test/icons/com.test.tweak.alpha.png?v=9cdb58d0
+
+Package: com.test.tweak.beta
+Version: 0.9
+Architecture: iphoneos-arm64
+Maintainer: 小菜 <test@example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.test.tweak.beta_0.9_iphoneos-arm64.deb
+Size: 744
+MD5sum: 255becd3494a83bcb2a6704f891d02fa
+SHA1: 9c1744f7333997ca3f0f75addb53c3554accc577
+SHA256: 5c7a5dbb0acbc81d753e045e0fe8d21941d71278023582215bd77642e4d4e8dd
+Section: Tweaks
+Description: Tweaks 分组测试，arm64
+Author: 小菜
+Name: 测试插件 Beta
+Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
+
+Package: com.test.wx
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: 小菜 <test@example.com>
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.test.wx_1.0_iphoneos-arm64.deb
+Size: 738
+MD5sum: 605347ba197fb864f4bae6fc24dd30cc
+SHA1: 8b9a52047df52436932279917040203ece6fe4e5
+SHA256: 4cd0b2b4a6dfae8e92daf1d550d57ece252ab53b13240a366ff598cad5fd8812
+Section: 微信插件
+Description: 微信插件分组测试
+Author: 小菜
+Name: 微信测试助手
+Icon: https://ynyy0.github.io/repoconsole-test/CydiaIcon.png?v=7517b662
+

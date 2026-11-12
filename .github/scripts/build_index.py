@@ -6,6 +6,7 @@ and .github/workflows/deploy-pages.yml (deploys the freshly built site).
 """
 import hashlib
 import json
+import os
 import re
 import subprocess
 from pathlib import Path
@@ -76,9 +77,13 @@ def main():
     # 源图标内容哈希，用于单插件「使用源图标」和默认兜底图标的版本号
     source_icon_file = ROOT / 'CydiaIcon.png'
     source_v = icon_version(source_icon_file) if source_icon_file.is_file() else '0'
+    # 显式固定 UTF-8 locale：部分 runner 的 LANG=C 会让 dpkg-scanpackages
+    # 以非 UTF-8 字节回吐中文控制字段；errors='replace' 保证单个坏字节不炸整条流水线。
+    scan_env = dict(os.environ, LC_ALL='C.UTF-8', LANG='C.UTF-8')
     result = subprocess.run(
         ['dpkg-scanpackages', '-m', 'debs', '/dev/null'],
-        cwd=ROOT, capture_output=True, text=True, check=False,
+        cwd=ROOT, capture_output=True, check=False, env=scan_env,
+        encoding='utf-8', errors='replace',
     )
     if result.returncode != 0:
         # 单个损坏的 deb 只会被跳过，不再导致整个部署失败
@@ -118,6 +123,10 @@ def main():
                 lines.append(f'Icon: {ICON_BASE}{icon_path.name}?v={icon_version(icon_path)}')
             elif not any(line.startswith('Icon: ') for line in lines):
                 lines.append(f'Icon: {DEFAULT_ICON}?v={source_v}')
+
+        # deb 没写 Section 时补一个中性分类，避免 Sileo / 管理台出现空白分组
+        if package and not any(line.startswith('Section: ') for line in lines):
+            lines.append('Section: 未分类')
 
         # 管理台写入的显示名 / 描述 / 分类覆盖：
         # 路径键保存「同包名多变体」各自的设置，包名键是用户在管理台编辑后的最新意图。
